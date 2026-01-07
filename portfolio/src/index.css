@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+html, body, #root {
+    margin: 0;
+    height: 100%;
+}
+
+@theme {
+    --font-iceland: "Iceland", sans-serif;
+}
+
+@layer components {
+    .startbtn {
+        @apply px-2 border-2 rounded border-white bg-blue-950 text-white transition-all duration-500;
+    }
+
+    .startbtn:hover,
+    .startbtn:focus-visible
+    {
+        @apply border-yellow-500 bg-yellow-200 text-black;
+    }
+}

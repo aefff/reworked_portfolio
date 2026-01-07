@@ -1,5 +1,14 @@
+import Home from "./Home"
+import Layout from "./Layout"
+import { Routes, Route } from "react-router-dom"
 function App() {
-    return (<p className= "m-5 p-4 grid place-content-center bg-blue-950 text-white">Hi</p>)
+    return (
+        <Routes>
+            <Route path="/" element={<Layout/>}>
+                <Route index element={<Home/>} />
+            </Route>
+        </Routes>
+    )
 }
 
 export default App
