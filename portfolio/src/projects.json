@@ -1,0 +1,106 @@
+[
+  {
+    "id": "task-manager",
+    "title": "Task Manager Web App",
+    "subtitle": "React + TypeScript calendar UI",
+    "description": "A calendar-based task management web application that allows users to create, edit, schedule, and complete tasks using intuitive weekly and monthly calendar views.",
+    "stack": [ "React", "TypeScript", "Tailwind CSS", "Local Storage" ],
+    "features": [
+      "Task creation and editing",
+      "Week and month calendar views",
+      "Completion tracking",
+      "Responsive UI",
+      "Local persistence"
+    ],
+    "howBuilt": [
+      "Designed the UI using reusable React components such as panels, cards, and buttons.",
+      "Implemented weekly and monthly calendar views using scrollable time grids.",
+      "Connected tasks to time blocks and stored data locally for persistence.",
+      "Structured the app around clean routing and a shared layout."
+    ],
+    "challenges": [
+      "Managing complex UI state for task editing and scheduling.",
+      "Ensuring smooth scrolling and rendering performance in the calendar views.",
+      "Handling task editing without resetting form state prematurely."
+    ],
+    "github": ""
+  },
+  {
+    "id": "3d-visualizer",
+    "title": "3D Visualizer",
+    "subtitle": "C# backend + Three.js renderer",
+    "description": "An interactive 3D visualization tool that allows users to create, manipulate, and explore 3D objects in real time.",
+    "stack": [ "C#", "Three.js", "WebGL" ],
+    "features": [
+      "3D object creation",
+      "Rotation and scaling",
+      "Camera controls",
+      "Real-time rendering",
+      "Interactive scene management"
+    ],
+    "howBuilt": [
+      "Built the backend logic in C# to manage object data and transformations.",
+      "Integrated a Three.js renderer for real-time 3D visualisation.",
+      "Implemented camera controls, object selection, and transformation tools.",
+      "Designed a modular architecture for future expansion."
+    ],
+    "challenges": [
+      "Synchronising backend object state with the 3D renderer.",
+      "Optimising rendering performance for complex scenes.",
+      "Designing intuitive camera and object controls."
+    ],
+    "github": ""
+  },
+  {
+    "id": "tensorflow-ml",
+    "title": "TensorFlow ML",
+    "subtitle": "Training + evaluation experiments",
+    "description": "A collection of machine learning experiments built using TensorFlow, focusing on training, evaluating, and optimising neural network models for classification tasks.",
+    "stack": [ "Python", "TensorFlow", "NumPy", "Matplotlib" ],
+    "features": [
+      "Model training pipelines",
+      "Evaluation and metrics",
+      "Image classification experiments",
+      "Data preprocessing",
+      "Hyperparameter tuning"
+    ],
+    "howBuilt": [
+      "Built training pipelines using TensorFlow and Keras.",
+      "Implemented data preprocessing and augmentation workflows.",
+      "Evaluated models using validation metrics and visualisations.",
+      "Experimented with different architectures and hyperparameters."
+    ],
+    "challenges": [
+      "Avoiding overfitting on small datasets.",
+      "Tuning hyperparameters for optimal performance.",
+      "Managing long training times and large model sizes."
+    ],
+    "github": ""
+  },
+  {
+    "id": "project-manager-wpf",
+    "title": "Project Manager (WPF)",
+    "subtitle": "C#/.NET desktop productivity",
+    "description": "A desktop-based project management application built using WPF that allows users to manage projects, track progress, and visualise timelines.",
+    "stack": [ "C#", ".NET", "WPF", "SQLite" ],
+    "features": [
+      "Project tracking dashboard",
+      "Timeline visualisation",
+      "Task management",
+      "Local database persistence",
+      "Event-driven UI"
+    ],
+    "howBuilt": [
+      "Designed the UI using WPF with MVVM architecture.",
+      "Implemented a local SQLite database for project storage.",
+      "Built timeline and task tracking views.",
+      "Used event-driven patterns for responsive UI updates."
+    ],
+    "challenges": [
+      "Designing a clean MVVM architecture.",
+      "Synchronising UI updates with database changes.",
+      "Handling large project datasets efficiently."
+    ],
+    "github": ""
+  }
+]

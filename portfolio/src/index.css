@@ -7,6 +7,16 @@ html, body, #root {
 
 @theme {
     --font-iceland: "Iceland", sans-serif;
+
+    @keyframes blink {
+        0%, 49% {
+            opacity: 1;
+        }
+
+        50%, 100% {
+            opacity: 0;
+        }
+    }
 }
 
 @layer components {
@@ -62,7 +72,7 @@ html, body, #root {
     }
 
     .page-wrap {
-        @apply w-full max-w-5xl mx-auto px-4 md:px-6;
+        @apply w-full max-w-5xl mx-auto;
     }
 
 
@@ -104,13 +114,11 @@ html, body, #root {
         animation: blink 1.1s steps(1, end) infinite;
     }
 
-    @keyframes blink {
-        0%, 49% {
-            opacity: 1;
-        }
+    .slider {
+        @apply overflow-hidden;
+    }
 
-        50%, 100% {
-            opacity: 0;
-        }
+    .slider .li {
+
     }
 }

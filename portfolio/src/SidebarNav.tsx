@@ -10,7 +10,7 @@ function SidebarNav() {
                 </div>
 
                 <nav className="flex flex-col gap-2">
-                    <NavLink to="/" end className="nav-link">
+                    <NavLink to="/home" end className="nav-link">
                         Home
                     </NavLink>
 
