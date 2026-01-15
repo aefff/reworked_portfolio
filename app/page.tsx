@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <div className="page-wrap flex min-h-[calc(100vh-2.5rem)] items-center justify-center -translate-x-[50px]">
+        <div className="page-wrap flex min-h-[calc(100vh-2.5rem)] items-center justify-center">
             <div className="panel text-center max-w-lg w-full">
                 <div className="panel-inner p-4">
 
-                    <p className="section-title !mb-1 leading-none">WELCOME</p>
+                    <p className="section-title mb-1! leading-none">WELCOME</p>
 
                     <p className="text-blue-200/90 tracking-wide mb-3">
                         AbdulMoyeed Mohammed

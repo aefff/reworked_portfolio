@@ -6,7 +6,7 @@ type SidebarNavProps = {
 
 function SidebarNav({ onClose }: SidebarNavProps) {
     return (
-        <div className="panel h-[calc(100vh-40px)] md:h-[calc(100vh-48px)]">
+        <div className="panel h-[calc(100vh-40px)] md:h-[calc(100vh-48px)] w-60 md:w-55">
             <div className="panel-inner flex h-full flex-col gap-6">
                 <div>
                     <div className="text-xl tracking-widest text-blue-100 break-words">
@@ -20,7 +20,7 @@ function SidebarNav({ onClose }: SidebarNavProps) {
                 </button>
 
                 <nav className="flex flex-col gap-2">
-                    <Link className="nav-link" onClick={onClose} href="/">
+                    <Link className="nav-link" onClick={onClose} href="/home">
                         Home
                     </Link>
 
