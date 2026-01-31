@@ -6,10 +6,10 @@ type SidebarNavProps = {
 
 function SidebarNav({ onClose }: SidebarNavProps) {
     return (
-        <div className="panel h-[calc(100vh-40px)] md:h-[calc(100vh-48px)] w-60 md:w-55">
+        <div className="panel h-auto md:h-[calc(100vh-48px)] w-auto md:w-55">
             <div className="panel-inner flex h-full flex-col gap-6">
                 <div>
-                    <div className="text-xl tracking-widest text-blue-100 break-words">
+                    <div className="text-xl tracking-widest text-blue-100 wrap-break-word">
                         ABDULMOYEED.exe
                     </div>
                     <div className="text-blue-200/80 mt-1">Software Engineering</div>

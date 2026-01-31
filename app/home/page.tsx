@@ -18,8 +18,6 @@ export default function Page() {
         return new LinkedList(v, i + 1);
     })
 
-    console.log(linkedListCarousel.map((l) => { return l.value, l.pointer }))
-
     return (
         <NewPage>
             <p className="section-title mb-2">WELCOME</p>
