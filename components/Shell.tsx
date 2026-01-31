@@ -14,15 +14,10 @@ export default function Shell ({children} : {children: React.ReactNode}) {
         const html = document.documentElement;
         const body = document.body;
 
-        if (open && !screenSize.isMd) {
-            html.style.overflow = "hidden";
-            body.style.overflow = "hidden";
-            body.style.touchAction = "none";
-        } else {
-            html.style.overflow = "";
-            body.style.overflow = "";
-            body.style.touchAction = "";
-        }
+        const shouldLock = open && !screenSize.isMd;
+        html.style.overflow = shouldLock ? "hidden" : "";
+        body.style.overflow = shouldLock ? "hidden" : "";
+        body.style.touchAction = shouldLock ? "none" : "";
 
         return () => {
             html.style.overflow = "";
@@ -30,6 +25,7 @@ export default function Shell ({children} : {children: React.ReactNode}) {
             body.style.touchAction = "";
         };
     }, [open, screenSize.isMd]);
+
 
     return (
         <main className="relative min-h-screen overflow-hidden bg-linear-to-b from-blue-950 via-blue-900 to-blue-950 text-white font-iceland">
@@ -49,10 +45,10 @@ export default function Shell ({children} : {children: React.ReactNode}) {
 
                 <aside
                     className={[
-                        "fixed inset-y-0 left-0 z-40 lg:w-65 md:p-6 transition-[transform,opacity] duration-300 ease-in-out overflow-x-hidden w-60 p-0",
-                        open
-                            ? "translate-x-0 opacity-100 pointer-events-auto overflow-y-auto"
-                            : "-translate-x-full opacity-0 pointer-events-none overflow-y-auto md:static md:translate-x-0 md:opacity-100 md:pointer-events-auto md:overflow-hidden"
+                        "z-40 p-5 md:p-6 w-55 lg:w-65",
+                        "md:static md:translate-x-0 md:opacity-100 md:pointer-events-auto",
+                        "fixed inset-y-0 left-0 transition-transform duration-300",
+                        open ? "translate-x-0" : "-translate-x-full",
                     ].join(" ")}
                 >
                     <SidebarNav onClose={() => setOpen(false)} />

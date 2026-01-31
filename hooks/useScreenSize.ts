@@ -22,9 +22,5 @@ export default function useScreenSize() {
         return () => window.removeEventListener("resize", update);
     }, []);
 
-    useEffect(() => {
-        console.log("screenSize state updated:", screenSize);
-    }, [screenSize]);
-
     return { screenSize };
 }
