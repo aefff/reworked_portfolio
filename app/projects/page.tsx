@@ -3,6 +3,7 @@
 import Link from "next/link";
 import NewPage from "@/components/NewPage"
 import useProjectManager from "@/hooks/useProjectManager";
+import BackButton from "@/components/BackButton";
 
 type pageProps = {
     params: {
@@ -17,7 +18,7 @@ export default function Page({params}: { params?: pageProps }) {
             <div className="flex flex-wrap justify-between gap-3">
                 <h1 className="section-title m-0">Projects</h1>
                 <div className="flex gap-2">
-                    <Link href="/" className="btn-ghost">Back</Link>
+                    <BackButton/>
                 </div>
             </div>
 

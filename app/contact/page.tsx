@@ -1,5 +1,6 @@
 import NewPage from "@/components/NewPage";
 import Link from "next/link";
+import BackButton from "@/components/BackButton";
 
 export default function Page() {
     return (
@@ -16,6 +17,7 @@ export default function Page() {
                     <Link href="/projects" className="btn-ghost">
                         View Work
                     </Link>
+                    <BackButton/>
                 </div>
             </div>
 

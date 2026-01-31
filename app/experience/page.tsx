@@ -1,5 +1,6 @@
 import NewPage from "@/components/NewPage";
 import Link from "next/link";
+import BackButton from "@/components/BackButton";
 
 export default function Page() {
     return (
@@ -13,9 +14,7 @@ export default function Page() {
                 </div>
 
                 <div className="flex gap-2">
-                    <Link href="/" className="btn-ghost">
-                        Back
-                    </Link>
+                    <BackButton/>
                 </div>
             </div>
 

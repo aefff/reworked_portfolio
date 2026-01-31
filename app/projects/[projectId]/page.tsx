@@ -4,6 +4,7 @@ import Link from "next/link";
 import useProjectManager from "@/hooks/useProjectManager";
 import {use} from "react";
 import NewPage from "@/components/NewPage"
+import BackButton from "@/components/BackButton";
 
 type Params = { projectId: string; }
 
@@ -26,7 +27,7 @@ export default function Page({params}: { params: Promise<Params> }) {
         return (
             <NewPage>
                 <h1 className="section-title">Project not found</h1>
-                <Link href="/projects" className="btn-ghost mt-3">Back</Link>
+                <BackButton/>
             </NewPage>
         )
     }
