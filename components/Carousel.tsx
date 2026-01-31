@@ -31,7 +31,7 @@ export default function Carousel({children}: { children: ReactNode }) {
             <div className="mt-4 flex flex-row overflow-x-auto">
                 {items.map((item, i) => (
                     <div key={i}
-                         ref={(el) => itemRefs.current[i] = el}
+                         ref={(el) => {itemRefs.current[i] = el}}
                          className={"flex gap-4 pb-3 p-2 snap-x snap-mandatory " + (i === selected ? "bg-blue-700 opacity-80 rounded-lg" : "")}>
                         {item}
                     </div>
