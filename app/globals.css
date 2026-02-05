@@ -113,7 +113,12 @@
         @apply overflow-hidden;
     }
 
-    .slider .li {
+    .my-scroll-container {
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
 
+    .my-scroll-container::-webkit-scrollbar {
+        display: none;
     }
 }

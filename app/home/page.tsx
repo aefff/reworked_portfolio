@@ -4,13 +4,21 @@ import useProjectManager from "@/hooks/useProjectManager";
 import Link from "next/link";
 import NewPage from "@/components/NewPage";
 import Carousel from "@/components/Carousel";
+import BackButton from "@/components/BackButton";
 
 export default function Page() {
     const {projects} = useProjectManager();
 
     return (
         <NewPage>
-            <p className="section-title mb-2">WELCOME</p>
+            <div className="flex flex-wrap justify-between gap-3">
+                <h1 className="section-title m-0">Welcome</h1>
+                <div className="flex gap-2">
+                    <BackButton/>
+                </div>
+            </div>
+
+            <div className="divider"/>
 
             <div className="text-lg text-blue-100 leading-relaxed">
                 <div className="text-blue-200">About me:</div>

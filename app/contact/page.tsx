@@ -40,7 +40,7 @@ export default function Page() {
                             <a className="startbtn" href="https://github.com/aefff" target="_blank">
                                 GitHub
                             </a>
-                            <a className="startbtn" href="https://www.linkedin.com/in/abdulmoyeed-mohammed-308a14281/"
+                            <a className="startbtn" href="https://www.linkedin.com/in/abdulmoyeed-mohammed-852556271/"
                                target="_blank">
                                 LinkedIn
                             </a>
@@ -65,7 +65,7 @@ export default function Page() {
                         <ul className="bullets wrap-break-word">
                             <li>Email: abdulmoyeed3211@gmail.com</li>
                             <li>GitHub: <a href="https://github.com/aefff" target="_blank">https://github.com/aefff</a></li>
-                            <li>LinkedIn: <a href="https://www.linkedin.com/in/abdulmoyeed-mohammed-308a14281/" target="_blank">https://www.linkedin.com/in/abdulmoyeed-mohammed-308a14281/</a></li>
+                            <li>LinkedIn: <a href="https://www.linkedin.com/in/abdulmoyeed-mohammed-852556271/" target="_blank">https://www.linkedin.com/in/abdulmoyeed-mohammed-308a14281/</a></li>
                             <li>Location: Birmingham, UK</li>
                         </ul>
                     </div>

@@ -22,13 +22,13 @@ export default function Carousel({children}: { children: ReactNode }) {
 
     return (
         <div className="pt-3">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center my-scroll-container">
                 <button className="btn-ghost" onClick={() => setSelected(selected - 1 < 0 ? items.length - 1 : selected - 1)}>Prev</button>
                 <p>{`${selected + 1 + "/" + items.length}`}</p>
                 <button className="btn-ghost" onClick={() => setSelected(selected + 1 >= items.length ? 0 : selected + 1)}>Next
                 </button>
             </div>
-            <div className="mt-4 flex flex-row overflow-x-auto">
+            <div className="my-scroll-container mt-4 flex flex-row overflow-x-auto">
                 {items.map((item, i) => (
                     <div key={i}
                          ref={(el) => {itemRefs.current[i] = el}}
