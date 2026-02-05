@@ -16,7 +16,7 @@
 
 @layer components {
     .startbtn {
-        @apply px-3 py-1 border-2 rounded-md border-white bg-blue-950 text-white transition-all duration-500 tracking-widest place-content-center;
+        @apply px-3 py-1 border-2 rounded-md border-white bg-blue-950 text-white transition-all duration-500 tracking-widest place-content-center cursor-pointer;
     }
 
     .startbtn:hover,
@@ -25,7 +25,7 @@
     }
 
     .btn-ghost {
-        @apply px-3 py-2 border-2 rounded-md border-blue-300/70 text-blue-100 bg-blue-950/30 transition-all duration-300;
+        @apply px-3 py-2 border-2 rounded-md border-blue-300/70 text-blue-100 bg-blue-950/30 transition-all duration-300 cursor-pointer;
     }
 
     .btn-ghost:hover,

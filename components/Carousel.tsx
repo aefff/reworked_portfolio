@@ -9,8 +9,8 @@ export default function Carousel({children}: { children: ReactNode }) {
 
     const [selected, setSelected] = useState(0);
 
-    useEffect(() => {
-        const el = itemRefs.current[selected];
+    const scrollTo = (i: number) => {
+        const el = itemRefs.current[i];
         if (!el) return;
 
         el.scrollIntoView({
@@ -18,14 +18,27 @@ export default function Carousel({children}: { children: ReactNode }) {
             inline: "start",
             block: "nearest",
         });
-    }, [selected]);
+    };
 
     return (
         <div className="pt-3">
             <div className="flex justify-between items-center my-scroll-container">
-                <button className="btn-ghost" onClick={() => setSelected(selected - 1 < 0 ? items.length - 1 : selected - 1)}>Prev</button>
+                <button className="btn-ghost" onClick={() => {
+                        const next = selected - 1 < 0 ? items.length - 1 : selected - 1;
+                        setSelected(next);
+                        scrollTo(next);
+                    }}
+                >
+                    Prev
+                </button>
                 <p>{`${selected + 1 + "/" + items.length}`}</p>
-                <button className="btn-ghost" onClick={() => setSelected(selected + 1 >= items.length ? 0 : selected + 1)}>Next
+                <button className="btn-ghost" onClick={() => {
+                        const next = selected + 1 >= items.length ? 0 : selected + 1;
+                        setSelected(next);
+                        scrollTo(next);
+                    }}
+                >
+                    Next
                 </button>
             </div>
             <div className="my-scroll-container mt-4 flex flex-row overflow-x-auto">

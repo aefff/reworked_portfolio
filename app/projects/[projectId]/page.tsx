@@ -59,7 +59,7 @@ export default function Page({params}: { params: Promise<Params> }) {
                         )
                     }
 
-                    <Link href="/projects" className="btn-ghost">Back</Link>
+                    <BackButton/>
                 </div>
             </div>
 
